@@ -37,20 +37,16 @@ let message = '';
 // Fase di input
 logIn.addEventListener('click', function(){
     let mailCheck = mail.value.trim();
-    console.log(mailCheck)
     
     // Fase di elaborazione
     for (let i = 0; i < authorizedMail.length; i++) {
         if (mailCheck === authorizedMail[i]) {
-            message = 'Benvenuto!';
+            message = 'Sei il benvenuto ' + mailCheck;
             afterCheck.innerText = message
             return;
-        } else {
-            message = 'Non sei autorizzato ad entrare. Prova con un\'altra mail.'
-            console.log(message)
-            afterCheck.innerText = message
-
         }
+        message = 'Non sei autorizzato ad entrare. Prova con un\'altra mail.'
+        afterCheck.innerText = message
     }
 })
 
