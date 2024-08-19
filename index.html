@@ -12,23 +12,30 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h2>Gioco dei dadi</h2>
-    <div class="dice-throw d-flex gap-3">
-        <div>
-            <h4>Tiro del giocatore</h4>
-            <span id="player-throw">
-            </span>
+    <div class="container mt-4">
+        <div class="dice-game">
+            <h2 class="mb-3">Gioco dei dadi</h2>
+            <div class="dice-throw d-flex gap-3">
+                <div>
+                    <h4>Tiro del giocatore</h4>
+                    <span id="player-throw">
+                    </span>
+                </div>
+                <div>
+                    <h4>Tiro del computer</h4>
+                    <span id="pc-throw">
+                    </span>
+                </div>
+            </div>
+            <div class="dice-result-section mt-4">
+                <h4>Risultato</h4>
+                <section id="dice-result"></section>
+            </div>
         </div>
-        <div>
-            <h4>Tiro del computer</h4>
-            <span id="pc-throw">
-            </span>
+        <hr>
+        <div class="false-login">
+            <h2>Finta Login</h2>
         </div>
-    </div>
-    <hr>
-    <div class="dice-result-section">
-        <h4>Risultato</h4>
-        <section id="dice-result"></section>
     </div>
 </body>
 </html>

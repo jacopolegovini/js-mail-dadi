@@ -1,5 +1,3 @@
-console.log('js ok')
-
 const playerThrowField = document.getElementById('player-throw');
 const pcThrowField = document.getElementById('pc-throw');
 const diceResultField = document.getElementById('dice-result');
@@ -21,3 +19,7 @@ playerThrowField.innerText = playerThrowElement;
 pcThrowField.innerText = pcThrowElement;
 
 diceResultField.innerText = result
+
+
+// ----------------------------------------------------------------
+
