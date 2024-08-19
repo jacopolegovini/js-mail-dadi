@@ -23,3 +23,20 @@ diceResultField.innerText = result
 
 // ----------------------------------------------------------------
 
+
+// Dichiarazione variabili e DOM
+const mail = document.getElementById('mail');
+const logIn = document.getElementById('login-button');
+
+const authorizedMail = ['jacopolegovini@gmail.com', 'carlopiano@gmail.com', 'tizioacaso@gmail.com', 'altrotizioacaso@gmail.com']
+
+
+// Fase di input
+logIn.addEventListener('click', function(){
+    let mailCheck = mail.value;
+    console.log(mailCheck)
+
+})
+
+
+// Fase di elaborazione
